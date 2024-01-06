@@ -1,0 +1,62 @@
+/*----- constants ----- */
+$size-point: 8px;
+
+
+/*----- colors ----- */
+$primary--100: #e70000;
+
+$neutral--100: #0f1922;
+$neutral--90: #181818;
+$neutral--80: #202020;
+$neutral--70: #252525;
+$neutral--60: #454545e6;
+$neutral--50: #989898;
+$neutral--40: #a8a8a8;
+$neutral--30: #959595;
+$neutral--20: #ede9ff;
+$neutral--10: #f8f8f8;
+$neutral--0: #fff;
+
+$additional-violet: #a4285e;
+$additional-berry: #b30053;
+$additional-blue: #21487d;
+$additional-mariner: #3b5998;
+$additional-navy: #3573bc;
+$additional-azure: #0067ff;
+$additional-yellow: #eacc14;
+$additional-gold: #eacc14;
+$additional-green: #389727;
+
+
+/*----- font-sizes ----- */
+$fz-12: 12px;
+$fz-13: 13px;
+$fz-14: 14px;
+$fz-15: 15px;
+$fz-16: 16px;
+$fz-18: 18px;
+$fz-20: 20px;
+$fz-22: 22px;
+$fz-24: 24px;
+$fz-26: 26px;
+$fz-28: 28px;
+$fz-30: 30px;
+$fz-35: 35px;
+$fz-38: 38px;
+$fz-40: 40px;
+$fz-50: 50px;
+
+
+/*----- font-families ----- */
+$inter: 'Inter', sans-serif;
+
+
+/*----- spaces----- */
+$space-xxs: $size-point / 2;
+$space-xs: $size-point;
+$space-sm: $size-point * 2;
+$space: $size-point * 3;
+$space-md: $size-point * 4;
+$space-lg: $size-point * 5;
+$space-xl: $size-point * 6;
+$space-xxl: $size-point * 7;

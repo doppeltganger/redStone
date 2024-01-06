@@ -1,0 +1,32 @@
+.input,
+.textarea {
+  padding: ($space-sm - 4) 0;
+  font-size: 16px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid $neutral--20;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  transition: .3s;
+  overflow: hidden;
+
+  &[required] {
+    &::placeholder {
+      color: $primary--100;
+    }
+  }
+}
+
+.input--invalid,
+.textarea--invalid {
+  border-color: $primary--100;
+}
+
+.textarea {
+  display: block;
+  resize: none;
+  height: 100px;
+}

@@ -1,0 +1,98 @@
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: $fz-14;
+  font-weight: 400;
+  overflow-x: hidden;
+
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, $inter;
+    box-sizing: border-box;
+  }
+}
+
+.body--fixed {
+  overflow: hidden;
+}
+
+main {
+  padding: 60px 0 0;
+
+  @media (min-width: 1200px) {
+    padding: 80px 0 0;
+  }
+
+  @media (min-width: 1820px) {
+    padding: 130px 0 0;
+  }
+  
+  .container {
+    @media (min-width: 1820px) {
+      max-width: 1600px;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $space-sm;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1280px;
+  }
+
+  @media (min-width: 1820px) {
+    max-width: 1790px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/*----- scroll ----- */
+* {
+  scrollbar-color: $primary--100 $neutral--20;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba($neutral--100, 0);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $primary--100;
+}
+
+*::-webkit-scrollbar-track {
+  background: $neutral--20;
+}

@@ -1,0 +1,122 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__item {
+  min-height: 20px;
+
+  a {
+    position: relative;
+    padding: 0 0 0 ($space-sm + 2);
+    font-size: $fz-16;
+    font-weight: 400;
+    color: $neutral--0;
+    transition: .6s;
+
+    @media (min-width: 1200px) {
+      padding: 0 0 0 $space-md;
+    }
+
+    @media (min-width: 1367px) {
+      font-size: $fz-18;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      width: 18px;
+      height: 18px;
+      fill: $neutral--40;
+      transition: .6s;
+    }
+  
+    span {
+      display: none;
+  
+      @media (min-width: 1200px) {
+        display: block;
+      }
+    }
+  }
+}
+
+.socials__item--dribbble {
+  a {
+    &:hover {
+      @media (min-width: 1200px) {
+        color: $additional-violet;
+      }
+
+      svg {
+        @media (min-width: 1200px) {
+          fill: $additional-violet;
+        }
+      }
+    }
+  }
+}
+
+.socials__item--behance {
+  a {
+    &:hover {
+      @media (min-width: 1200px) {
+        color: $additional-azure;
+      }
+
+      svg {
+        @media (min-width: 1200px) {
+          fill: $additional-azure;
+        }
+      }
+    }
+  }
+}
+
+.socials__item--facebook {
+  a {
+    &:hover {
+      @media (min-width: 1200px) {
+        color: $additional-mariner;
+      }
+
+      svg {
+        @media (min-width: 1200px) {
+          fill: $additional-mariner;
+        }
+      }
+    }
+  }
+}
+
+.socials__item--instagram {
+  a {
+    &:hover {
+      @media (min-width: 1200px) {
+        color: $neutral--0
+      }
+
+      svg {
+        &:first-of-type {
+          @media (min-width: 1200px) {
+            opacity: 0;
+          }
+        }
+
+        &:last-of-type {
+          @media (min-width: 1200px) {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    svg {
+      &:last-of-type {
+        opacity: 0;
+      }
+    }
+  }
+}
